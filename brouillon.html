@@ -1,0 +1,311 @@
+<html><head>
+
+<style type="text/css">
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight:300;
+        font-size:18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+
+    h1 {
+        font-weight:300;
+    }
+
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        padding: 20px;
+    }
+
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    a:link,a:visited
+    {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #208799;
+    }
+
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                15px 15px 0 0px #fff, /* The fourth layer */
+                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                20px 20px 0 0px #fff, /* The fifth layer */
+                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                25px 25px 0 0px #fff, /* The fifth layer */
+                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+
+
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    hr
+    {
+        border: 0;
+        height: 1.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+</style>
+
+
+
+        <title>GazeShiftNet</title>
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:42px"><span style="color: tomato">Look here!</span> A parametric learning based approach to redirect visual attention</span>
+
+    </center>
+
+    <br><br>
+      <table align="center" width="1000px">
+       <tbody><tr>
+        <td align="center" width="150px">
+        <center>
+            <span style="font-size:20px">Youssef Alami Mejjati<sup>1</sup></span>
+        </center>
+        </td>
+
+        <td align="center" width="100px">
+        <center>
+        <span style="font-size:20px">Celso F. Gomez<sup>2</sup></span>
+        </center>
+        </td>
+
+        <td align="center" width="100px">
+        <center>
+        <span style="font-size:20px">Kwang In Kim<sup>3</sup></span>
+        </center>
+        </td>
+
+        <td align="center" width="100px">
+        <center>
+        <span style="font-size:20px">Eli Shechtman<sup>2</sup></span>
+        </center>
+        </td>
+
+        <td align="center" width="100px">
+        <center>
+        <span style="font-size:20px">Zoya Bylinskii<sup>2</sup></span>
+        </center>
+        </td>
+     </tr>
+    </tbody></table>
+
+    <table align="center" width="700px">
+       <tbody><tr>
+        <td align="center" width="100px">
+        <center>
+        <span style="font-size:20px"><sup>1</sup>University of Bath</span>
+        </center>
+        </td>
+
+        <td align="center" width="100px">
+        <center>
+        <span style="font-size:20px"><sup>2</sup>Adobe Research</span>
+        </center>
+        </td>
+
+        <td align="center" width="100px">
+        <center>
+        <span style="font-size:20px"><sup>3</sup>UNIST</span>
+        </center>
+        </td>
+     </tr>
+    </tbody></table>
+
+    <center>
+    <span style="font-size:20px">Published in ECCV 2020</span>
+    </center>
+
+    <br>
+    <table align="center" width="400px">
+     <tbody><tr>
+       <td align="center" width="100px">
+       <center>
+       <span style="font-size:20px"><a href="https://arxiv.org/pdf/2008.05413.pdf">[Paper]</a></span>
+       </center>
+       </td>
+
+
+<!--       <td align="center" width="100px">-->
+<!--        <center>-->
+<!--        <span style="font-size:20px"><a href="https://alamimejjati.github.io/GazeShiftNet/">[Arxiv]</a></span>-->
+<!--        </center>-->
+<!--        </td>-->
+
+
+      <td align="center" width="100px">
+      <center>
+      <span style="font-size:20px"><a href="https://github.com/AlamiMejjati/Gaze-Shift-Net">[Code]</a></span>
+      </center>
+      </td>
+
+   </tr>
+  </tbody></table>
+
+            <br>
+            <br>
+<!--                <center><a href="./ims/Teaser_fig.png"><img src="./ims/teaser.gif" height="600px" style="vertical-align:middle;margin: 0px -500px"></a><br> </center>-->
+<!--                <center><span style="font-size:20px"><br><i>-->
+<!--                              GazeShiftNet takes an image and binary mask as input and predicts a set of parameters (sharpening, exposure, contrast, tone, and color curves) that are sequentially applied to the image to produce the output. The transformed image subtly redirects visual attention towards the mask region, seen from the saliency maps. A user can then tune the edits up or down (as shown on the right)  at interactive rates, using the saliency slider.-->
+<!--                </i></span></center>-->
+            <center>
+            <a href="./ims/teaser.mp4">
+              <video autoplay="autoplay" loop="loop" muted="muted" src="./ims/teaser.mp4" style="vertical-align:middle;margin: 10px -300px"></video>
+            </a><br>
+            </center>
+            <br>
+            <br>
+            <hr>
+            <center><h1>Abstract</h1></center>
+            <br><br>
+    <p>Across photography, marketing, and website design, being able to direct the viewer's attention is a powerful tool. Motivated by professional workflows, we introduce an automatic method to make an image region more attention-capturing via subtle image edits that maintain realism and fidelity to the original. From an input image and a user-provided mask, our GazeShiftNet model predicts a distinct set of global parametric transformations to be applied to the foreground and background image regions separately. We present the results of quantitative and qualitative experiments that demonstrate improvements over prior state-of-the-art. In contrast to existing attention shifting algorithms, our global parametric approach better preserves image semantics and avoids typical generative artifacts. Our edits enable inference at interactive rates on any image size, and easily generalize to videos. Extensions of our model allow for multi-style edits and the ability to both increase and attenuate attention in an image region. Furthermore, users can customize the edited images by dialing the edits up or down via interpolations in parameter space. This paper presents a practical tool that can simplify future image editing pipelines. </p>
+            <br><br>
+          <hr>
+            <center><h1>Video summary</h1></center>
+        <table align=center width=900px>
+            <tr>
+                <td width=600px>
+                  <center>
+                    <div class = "video">
+                      <iframe width="720" height="405" src="https://www.youtube.com/embed/2R7LYATNoCs" frameborder="0" allowfullscreen></iframe>
+                   </div>
+                </center>
+                </td>
+            </tr>
+        </table>
+        <br>
+<!--        <hr>-->
+<!--         &lt;!&ndash; <table align=center width=550px> &ndash;&gt;-->
+<!--            <center><h1>Architecture</h1></center>-->
+<!--                <center><a href="./ims/architecture.png"><img src="./ims/architecture.png" width="1200px" style="vertical-align:middle;margin: 10px -300px"></a><br> </center>-->
+<!--                <center><span style="font-size:20px"><br><i>-->
+<!--                              GazeShiftNet architecture. Left: The image <b>I</b> and the mask <b>m</b> are encoded through a series of convolutional layers, then the foreground and background parameters are predicted using fully connected network heads. Right: Our decoder applies a series of differentiable functions sequentially using the predicted parameters.-->
+<!--                </i></span></center>-->
+<!--          <br>-->
+          <hr>
+
+
+                <center><h1>Results</h1></center>
+                    <center><a href="./ims/CompMech.png"><img src="./ims/CompMech.png" width="1500px" style="vertical-align:middle;margin: 10px -300px"></a><br> </center>
+                    <center><span style="font-size:20px"><br><i>Results on Mechrez datasets. Please see the supplemental material for further results.</i></span></center>
+                    <br>
+                    <br>
+                  <center><a href="./ims/CompCCC.png"><img src="./ims/CompCCC.png" width="1500px" style="vertical-align:middle;margin: 10px -300px"></a><br></center>
+                  <center><span style="font-size:20px"><br> <i> Results on CoCoClutter. Please see the supplemental material for further results.</i></span></center>
+
+                    <hr>
+                    <center><h1>Extensions</h1></center>
+                    <br>
+                        <center><span style="font-size:30px"><br><b>We can train our network in a stochastic manner, allowing for multiple editing styles as shown in the figure below:</b></span></center>
+
+                    <br>
+                    <br>
+                  <center><a href="./ims/multistyle.png"><img src="./ims/multistyle.png" width="1500px" style="vertical-align:middle;margin: 10px -300px"></a><br></center>
+                  <center><span style="font-size:20px"><br> <i> Sampling different latent vectors in our model results in stochastic variations, all of which achieve the same saliency objective, but with different `styles' of edits.</i></span></center>
+
+                    <br>
+                        <center><span style="font-size:30px"><br><b>We can train augment our network, such that it learns to shift the attention towards and away from the subject simultaneously as shown in the figure below:</b></span></center>
+                    <br>
+                  <br>
+                  <center><a href="./ims/incdec.png"><img src="./ims/incdec.png" width="1500px" style="vertical-align:middle;margin: 10px -300px"></a><br></center>
+                  <center><span style="font-size:20px"><br> <i> Using the input image and corresponding mask,
+                      we generate two images, one to shift visual attention towards the mask (col. 2) as seen from the
+                      saliency map in col. 3, and one to shift attention away from the mask (col. 4, saliency map in col. 5).</i></span></center>
+                <br>
+
+                    <center><span style="font-size:30px"><br><b> Our algorithm can seamlessly be applied to video by applying the predicted parameters from the first frame on the entire segmented video:</b></span></center>
+                <br>
+              <br>
+<!--              <center><a href="./ims/vid_fig_celso.png"><img src="./ims/vid_fig_celso.png" width="1500px" style="vertical-align:middle;margin: 10px -300px"></a><br></center>-->
+<!--              <center><span style="font-size:20px"><br> <i> Snapshots from a video before (left) and after (right) enhancing the snowboard.</i></span></center>-->
+            <table align=center width=1500px>
+                <tr>
+                    <td width=750px>
+                      <center>
+                        <div class = "video">
+                          <iframe width="725" height="400" style="vertical-align:middle;margin: 10px -300px" src="https://www.youtube.com/embed/mb5WZgszbzs?autoplay=1&mute=1&loop=1&playlist=mb5WZgszbzs" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </center>
+                    </td>
+                      <td width=750px>
+                      <center>
+                        <div class = "video">
+                          <iframe width="725" height="400"  style="vertical-align:middle;margin: 10px +200px" src="https://www.youtube.com/embed/OnP5MmNu8Gc?autoplay=1&mute=1&loop=1&playlist=OnP5MmNu8Gc" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </center>
+                    </td>
+                </tr>
+            </table>
+    <center><span style="font-size:20px"><br> <i> Left: Original video, Right: Edited video</i></span></center>
+                <br>
+                <hr>
+
+<center><h1>Acknowledgements</h1></center>
+                 Youssef Alami Mejjati thanks the Marie Sklodowska-Curie grant No 665992, and the Centre for Doctoral Training in Digital Entertainment (CDE), EP/L016540/1. K.~I.~Kim thanks Institute of Information & communications Technology Planning  Evaluation (IITP) grant (No.20200013360011001, Artificial Intelligence Graduate School support (UNIST)) funded by the Korea government (MSIT) .This webpage template was inspired from <a href="https://richzhang.github.io/colorization/">colorful image colorization</a>.
+        <br><br>
+
+
+</body></html>
