@@ -12,10 +12,17 @@
         margin-right: auto;
         width: 1500px;
     }
+    #contacts { float: center;
+            text-align: center;
+            font-size:22px;}
+    div {
+      float: left;
+      width: 1300px;
+    }
+
     h1 {
         font-weight:300;
     }
-
     .disclaimerbox {
         background-color: #eee;
         border: 1px solid #eeeeee;
@@ -24,7 +31,6 @@
         -webkit-border-radius: 10px ;
         padding: 20px;
     }
-
     video.header-vid {
         height: 140px;
         border: 1px solid black;
@@ -113,7 +119,7 @@
 <body style="background-color:#d6d6c2;">
 <h1>Youssef Alami Mejjati</h1>
 <div>
-    <p style="float: left;"><a href="./images/me_hike.jpg"><img src="./images/me_hike.jpg" width="510"></a></p>
+    <p style="float: left;"><img src="./images/me_hike.jpg" width="510"></p>
     <p style="text-align:Left;">
         <br>
         Hi there I am Youssef Alami Mejjati, a final year PhD student in the university of Bath, UK
@@ -134,7 +140,10 @@
         <br><br>
         My hobbies include: Hiking, Travelling, Geography, Running, Climbing, Tennis.
     </p>
-    <p><a> Contact me via: <a href = "mailto: yam28@bath.ac.uk" style="text-decoration: none;">yam28@bath.ac.uk</a>
+</div>
+
+<div id="contacts">
+        <p><a> Contact me via: <a href = "mailto: yam28@bath.ac.uk" style="text-decoration: none;">yam28@bath.ac.uk</a>
         or
         <a href = "mailto: alamimejjatiyoussef@gmail.com" style="text-decoration: none;"    >alamimejjatiyoussef@gmail.com </a></a>
     </p>
@@ -143,20 +152,25 @@
             CV <i class="fa fa-file-pdf-o" style="color:Blue"></i>
         </button>
 
-        <button style="font-size:20px" onclick="window.location.href='https://www.linkedin.com/in/youssef-alami-mejjati-3461755b/';" formtarget="_blank">
+        <button style="font-size:20px" onclick="window.open('https://www.linkedin.com/in/youssef-alami-mejjati-3461755b/','_blank')">
             Linkedin <i class="fa fa-linkedin-square" style="color:Blue"></i>
         </button>
 
-                <button style="font-size:20px" onclick="window.location.href='https://scholar.google.co.uk/citations?user=pexWUAcAAAAJ&hl=en';" formtarget="_blank">
+        <button style="font-size:20px" onclick="window.open('https://scholar.google.co.uk/citations?user=pexWUAcAAAAJ&hl=en','_blank')">
             Google Scholar <i class="fa fa-google" style="color:Red"></i>
         </button>
+
+        <button style="font-size:20px" onclick="window.open('https://github.com/AlamiMejjati','_blank')">
+            GitHub <i class="fa fa-github" style="color:Black"></i>
+        </button>
     </p>
+
 </div>
-<br><br>
 <div>
-    <h1>Publications</h1>
+<h1>Publications</h1>
 <!--    Look here-->
-     <p style="float: left;"><a href="./images/lookhere.png"><img src="./images/lookhere.png" width="200"></a></p>
+    <div>
+    <p style="float: left;"><a href="./images/lookhere.png"><img src="./images/lookhere.png" width="300"></a></p>
     <br>
     <p style="font-size:18px"><b>Look here, A parametric learning based approach to redirect visual attention.</b></p>
     <p><b>Youssef Alami Mejjati</b>, Celso F. Gomez, Kwang In Kim, Eli Shechtman, Zoya Bylinskii</p>
@@ -173,9 +187,12 @@
     <a href="https://github.com/AlamiMejjati/Gaze-Shift-Net" style="text-decoration: none;">
         [Code]
     </a>
+    </div>
+
+
 <!--    Stamps-->
-    <br><br>
-         <p style="float: left;"><a href="./images/stamps.png"><img src="./images/stamps.png" width="200"></a></p>
+    <div>
+    <p style="float: left;"><a href="./images/stamps.png" ><img src="./images/stamps.png" width="300"></a></p>
     <br>
     <p style="font-size:18px"><b>Generating object Stamps.</b></p>
     <p><b>Youssef Alami Mejjati</b>, Zejiang Shen, Michael Snower, Aaron Gokaslan, Oliver Wang, James Tompkin, Kwang In Kim</p>
@@ -188,10 +205,12 @@
         <a href="" style="text-decoration: none;">
         [Code]
     </a>
+    </div>
 
     <!--    im2im-->
-    <br><br><br><br><br>
-         <p style="float: left;"><a href="./images/im2im.png"><img src="./images/im2im.png" width="200"></a></p>
+
+    <div>
+    <p style="float: left;"><a href="./images/im2im.png" ><img src="./images/im2im.png" width="300"></a></p>
     <br>
     <p style="font-size:18px"><b>Unsupervised Attention-Guided Image to Image Translation.</b></p>
     <p><b>Youssef Alami Mejjati</b>, Christian Richardt, James Tompkin, Darren Cosker, Kwang In Kim</p>
@@ -200,13 +219,15 @@
     <a href="https://arxiv.org/pdf/1806.02311.pdf" style="text-decoration: none;">
         [paper]
     </a>
-        <a href="https://github.com/AlamiMejjati/Unsupervised-Attention-guided-Image-to-Image-Translation" style="text-decoration: none;">
+        </a>
+    <a href="https://github.com/AlamiMejjati/Unsupervised-Attention-guided-Image-to-Image-Translation" style="text-decoration: none;">
         [Code]
     </a>
+    </div>
 
-    <!--    Stamps-->
-    <br><br><br>
-         <p style="float: left;"><a href="./images/MTL.png"><img src="./images/MTL.png" width="200"></a></p>
+    <!--    MTL-->
+    <div>
+    <p style="float: left;"><a href="./images/MTL.png"><img src="./images/MTL.png" width="300"></a></p>
     <br>
     <p style="font-size:18px"><b>Multi-Task Learning by Maximizing Statistical Dependence.</b></p>
     <p><b>Youssef Alami Mejjati</b>, Darren Cosker, Kwang In Kim</p>
@@ -215,9 +236,8 @@
     <a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Mejjati_Multi-Task_Learning_by_CVPR_2018_paper.pdf" style="text-decoration: none;">
         [paper]
     </a>
-
+    </div>
 </div>
-
 
 </body>
 </html>
