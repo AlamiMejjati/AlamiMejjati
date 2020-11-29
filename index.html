@@ -1,269 +1,468 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Youssef's personal website</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style type="text/css">
-    body {
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        font-weight:300;
-        font-size:18px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 1200px;
-    }
-    #contacts { float: center;
-            text-align: center;
-            font-size:22px;}
-    div {
-      float: left;
-      width: 1200px;
-    }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    h1 {
-        font-weight:300;
-    }
-    .disclaimerbox {
-        background-color: #eee;
-        border: 1px solid #eeeeee;
-        border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-        padding: 20px;
-    }
-    video.header-vid {
-        height: 140px;
-        border: 1px solid black;
-        border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-    }
+    <title>Youssef Alami Mejjati's page</title>
 
-    img.header-img {
-        height: 140px;
-        border: 1px solid black;
-        border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-    }
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    img.rounded {
-        border: 1px solid #eeeeee;
-        border-radius: 10px ;
-        -moz-border-radius: 10px ;
-        -webkit-border-radius: 10px ;
-    }
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    a:link,a:visited
-    {
-        color: #1367a7;
-        text-decoration: none;
-    }
-    a:hover {
-        color: #208799;
-    }
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    td.dl-link {
-        height: 160px;
-        text-align: center;
-        font-size: 20px;
-    }
+    <!-- Theme CSS -->
+    <link href="css/creative.css" rel="stylesheet">
 
-    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-        box-shadow:
-                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-                5px 5px 0 0px #fff, /* The second layer */
-                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-                10px 10px 0 0px #fff, /* The third layer */
-                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
-                15px 15px 0 0px #fff, /* The fourth layer */
-                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
-                20px 20px 0 0px #fff, /* The fifth layer */
-                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
-                25px 25px 0 0px #fff, /* The fifth layer */
-                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
-        margin-left: 10px;
-        margin-right: 45px;
-    }
+    <!--Timeline CSS-->
+    <link href="css/story.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
 
 
-    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
-        box-shadow:
-                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
-                5px 5px 0 0px #fff, /* The second layer */
-                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
-                10px 10px 0 0px #fff, /* The third layer */
-                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-right: 30px;
-        margin-bottom: 5px;
-    }
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    .vert-cent {
-        position: relative;
-        top: 50%;
-        transform: translateY(-50%);
-    }
 
-    hr
-    {
-        border: 0;
-        height: 1.5px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    }
-</style>
+    <!-- Head elems for grid_portfolio -->
+
+    <script id="fullviewTmpl" type="text/x-jquery-tmpl">
+      {{html bgimage}}
+      <div class="full-view">
+        <span class="full-view-exit">Exit full screen view</span>
+        <div class="header">
+          <h2 class="title">${title}</h2>
+          <div class="full-nav">
+            <span class="full-nav-prev">Previous</span>
+            <span class="full-nav-pages">
+              <span class="full-nav-current">${current}</span>/
+              <span class="full-nav-total">${total}</span>
+            </span>
+            <span class="full-nav-next">Next</span>
+          </div>
+          <p class="subline">${subline}</p>
+          <span class="loading-small"></span>
+        </div>
+        <div class="project-descr-full">
+          <div class="thumbs-wrapper"><div class="thumbs">{{html thumbs}}</div></div>
+          <div class="project-descr-full-wrapper">
+            <div class="project-descr-full-content">{{html description}}</div><!-- project-descr-full-content -->
+          </div>
+        </div><!-- project-descr-full -->
+      </div><!-- full-view -->
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Ovo' rel='stylesheet' type='text/css' />
 
 </head>
 
-<body style="background-color:#d6d6c2;">
-<h1 style = "text-align: center; font-size:50px"> Youssef Alami Mejjati</h1>
-<div>
-    <img src="./images/me_hike.jpg" width="600" class="center">
-</div>
-<div>
-    <p style="text-align:center; font-size:22px">
-        <br>
-        Hi there, I am Youssef Alami Mejjati, a final year PhD candidate in the university of Bath, UK, and a recipient of the <a href="https://www.csct.ac.uk/msca-fire/">Marie Curie Fire fellowship</a>.
-        I am supervised by Dr <a href="http://kimki.unist.ac.kr/">Kwang In Kim</a>, Dr <a href="http://jamestompkin.com/">James Tompkin</a> and Prof <a href="http://www.cs.bath.ac.uk/~dpc/">Darren Cosker</a>.
-        <br><br>
-        I am particularly interested in facilitating the image generation and editing pipelines for artists,
-        professionals and practitioners. Currently, advanced image creation requires professional software,
-        human expertise and a lot of time. As a consequence, the creativity of many individuals cannot be seamlessly expressed.
-        My goal is to solve this through AI powered algorithms allowing users to express their ideas and imagination
-        in a controllable manner with only few clicks.
-        <br><br>
-        During my PhD I have been blessed to work on many projects that pushed the progress towards automatic image editing.
-        Using techniques, such as Generative adversarial networks (GANs) and Variational Auto-Encoders (VAEs),
-        I created novel algorithms for Image-to-Image translation, Object insertion and synthesis on existing scenes, and Human Attention Re-direction.
-        <br><br>
-        Before starting my PhD I was studying in France, where I did my undergraduate in applied mathematics and statistics in
-        Telecom SudParis (Institut Polytechnique de Paris), one of the leading engineering schools in France.
-        <br><br>
-        My hobbies include: Hiking, Travelling, Geography, Running, Climbing, Tennis.
-    </p>
-</div>
+<body id="page-top">
 
-<div id="contacts">
-        <p><a> Contact me via: <a href = "mailto: yam28@bath.ac.uk" style="text-decoration: none;">yam28@bath.ac.uk</a>
-        or
-        <a href = "mailto: alamimejjatiyoussef@gmail.com" style="text-decoration: none;"    >alamimejjatiyoussef@gmail.com </a></a>
-    </p>
-    <p>
-        <button style="font-size:20px" onclick="window.location.href='https://drive.google.com/uc?export=download&id=14VD83EhiBGHVK2WJI1z5PK9Mz776kbK3';" formtarget="_blank">
-            CV <i class="fa fa-file-pdf-o" style="color:Blue"></i>
-        </button>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+            </div>
 
-        <button style="font-size:20px" onclick="window.open('https://www.linkedin.com/in/youssef-alami-mejjati-3461755b/','_blank')">
-            Linkedin <i class="fa fa-linkedin-square" style="color:Blue"></i>
-        </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <li>
+                        <a class="page-scroll" href="#sketch-holder">About</a>
+                    </li> -->
+                    <!-- <li>
+                        <a class="page-scroll" href="#services">Interests</a>
+                    </li> -->
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Publications</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">CV</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
 
-        <button style="font-size:20px" onclick="window.open('https://scholar.google.co.uk/citations?user=pexWUAcAAAAJ&hl=en','_blank')">
-            Google Scholar <i class="fa fa-google" style="color:Red"></i>
-        </button>
 
-        <button style="font-size:20px" onclick="window.open('https://github.com/AlamiMejjati','_blank')">
-            GitHub <i class="fa fa-github" style="color:Black"></i>
-        </button>
-    </p>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-</div>
-<div>
-<h1>Publications</h1>
-<!--    Look here-->
-    <div>
-    <p style="float: left;"><a href="./images/lookhere.png"><img src="./images/lookhere.png" width="300"></a></p>
-    <br>
-    <p style="font-size:18px"><b>Look here, A parametric learning based approach to redirect visual attention.</b></p>
-    <p><b>Youssef Alami Mejjati</b>, Celso F. Gomez, Kwang In Kim, Eli Shechtman, Zoya Bylinskii</p>
-    <p style="color:coral;"><b>European Conference on Computer Vision 2020 (ECCV 2020)</b></p>
+    <header>
+      <div id="sketch-holder"> </div>
+        <div class="header-content">
 
-    <a href="https://arxiv.org/pdf/2008.05413.pdf" style="text-decoration: none;">
-        [paper]
-    </a>
-    ,
-    <a href="https://alamimejjati.github.io/GazeShiftNet/" style="text-decoration: none;">
-        [Project page]
-    </a>
-    ,
-    <a href="https://github.com/AlamiMejjati/Gaze-Shift-Net" style="text-decoration: none;">
-        [Code]
-    </a>
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Youssef Alami Mejjati</h1>
+                <hr>
+                <p>I'm a machine learning engineer, with a passion for computer vision and graphics.</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">About me</a>
+            </div>
+        </div>
+    </header>
+
+     <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row justify-content-center">>
+                <div class="portrait-pic">
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3 class="section-heading">About me</h3>
+                    <hr class="light">
+                    <h4>
+                    I am a graduate student at MIT pursuing a PhD in Computer Science, advised by Aude Oliva. I work at the intersection of computer vision, perception and computational cognition.
+                    Before my PhD, I obtained a masters in Computational Science at Harvard University.
+                  </h4>
+                    <br>
+                    <h3 class="section-heading">News</h3>
+                    <hr class="light">
+                    <h4>
+                      <ul>
+                      <li>Our new paper on Multi-duration saliency was accepted to CVPR2020!</li>
+                      <li>Two papers accepted at NeurIPS2019 SVHRM!</li>
+                      <li>Will be attending MIT for my PhD! Super excited!</li>
+                    </ul>
+                  </h4>
+                    <!-- <p>
+                    I graduated from the University of Buenos Aires with an Electrical Engineering degree, a 6 year degree which corresponds to a US bachelors + masters.
+                    During my last year of studies, I simultaneously worked at <a href="tenaris.com">Tenaris</a> as a Research Engineer, where I wrote my graduation Thesis on computer vision systems for flaw detection.
+                    After working at Tenaris for another six months, I received a Fulbright Scholarship for pursuing a masters degree in the United States, and got into Harvard where I am currently studying.
+                    </p>
+                    <br>
+                    <p>
+                    During the past summer, I interned at Nvidia with the Intelligent Video Analytics team.
+                    I have now joined the Computational Perception lab under Aude Oliva at MIT CSAIL,
+                    where I am researching multi-modal video understanding. I will be doing an internship at Google during this summer before joining a PhD program.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="story section">
+      <div class="container">
+      <!-- <h1 class="section-heading">Timeline</h1> -->
+      <!-- <hr> -->
+      <div class="modal-body row">
+      <div class="col-md-4">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="section-title">
+							<h2>Education</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-sm-12 col-xs-12">
+						<div class="story-content">
+              <!-- single-story -->
+							<div class="single-story">
+								<span class="year wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInLeft;">2019</span>
+								<div class="inner-content wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInUp;">
+									<h3>University of Bath</h3>
+									<p>PhD, Computer Science</p>
+									<p class="p2">Working on image editing and synthesis through generative adversarial networks.
+                                        Supervised by: Dr Kwang In KIm, Dr James Tompkin, Prof Darren Cosker</p>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
     </div>
 
+        <div class="col-md-4">
+      <div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="section-title">
+							<h2>Experience</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+						<div class="story-content">
+							<div class="single-story">
+								<span class="year wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInLeft;">2019</span>
+								<div class="inner-content wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInUp;">
+									<h3>Adobe Research</h3>
+									<p>Research Intern</p>
+									<p class="p2">Developing automatic methods to redirect human visual attention in photographs</p>
+								</div>
+							</div>
 
-<!--    Stamps-->
-    <div>
-    <p style="float: left;"><a href="./images/stamps.png" ><img src="./images/stamps.png" width="300"></a></p>
-    <br>
-    <p style="font-size:18px"><b>Generating object Stamps.</b></p>
-    <p><b>Youssef Alami Mejjati</b>, Zejiang Shen, Michael Snower, Aaron Gokaslan, Oliver Wang, James Tompkin, Kwang In Kim</p>
-    <p style="color:coral;"><b>CVPR workshop: AI for content creation 2020 (AI4CCW 2020)</b></p>
-
-    <a href="https://arxiv.org/pdf/2001.02595.pdf" style="text-decoration: none;">
-        [paper]
-    </a>
-        </a>
-        <a href="" style="text-decoration: none;">
-        [Code]
-    </a>
+						</div>
+					</div>
+				</div>
+			</div>
     </div>
+          <div class="col-md-4">
+      <div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="section-title">
+							<h2>Life journey</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+						<div class="story-content">
+							<div class="single-story">
+								<span class="year wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInLeft;">1992</span>
+								<div class="inner-content wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 0.8s; animation-delay: 0.4s; animation-name: fadeInUp;">
+									<h3>Fes, Morocco</h3>
+								</div>
+							</div>
 
-    <!--    im2im-->
-
-    <div>
-    <p style="float: left;"><a href="./images/im2im.png" ><img src="./images/im2im.png" width="300"></a></p>
-    <br>
-    <p style="font-size:18px"><b>Unsupervised Attention-Guided Image to Image Translation.</b></p>
-    <p><b>Youssef Alami Mejjati</b>, Christian Richardt, James Tompkin, Darren Cosker, Kwang In Kim</p>
-    <p style="color:coral;"><b>Conference on Neural Information Processing Systems 2018 (NeurIPS 2018)</b></p>
-
-    <a href="https://arxiv.org/pdf/1806.02311.pdf" style="text-decoration: none;">
-        [paper]
-    </a>
-        </a>
-    <a href="https://github.com/AlamiMejjati/Unsupervised-Attention-guided-Image-to-Image-Translation" style="text-decoration: none;">
-        [Code]
-    </a>
+						</div>
+					</div>
+				</div>
+			</div>
     </div>
-
-    <!--    MTL-->
-    <div>
-    <p style="float: left;"><a href="./images/MTL.png"><img src="./images/MTL.png" width="300"></a></p>
-    <br>
-    <p style="font-size:18px"><b>Multi-Task Learning by Maximizing Statistical Dependence.</b></p>
-    <p><b>Youssef Alami Mejjati</b>, Darren Cosker, Kwang In Kim</p>
-    <p style="color:coral;"><b>Conference on Computer Vision and Pattern Recognition 2018 (CVPR 2018)</b></p>
-
-    <a href="https://openaccess.thecvf.com/content_cvpr_2018/papers/Mejjati_Multi-Task_Learning_by_CVPR_2018_paper.pdf" style="text-decoration: none;">
-        [paper]
-    </a>
-    </div>
+  </div>
 </div>
+		</section>
 
-</body>
-</html>
+<!--    <section class="no-padding" id="portfolio">-->
+<!--      <div class="portfolio-title">-->
+<!--      <h1>Camilo's Projects</h1>-->
+<!--      <hr>-->
+<!--      </div>-->
+<!--        <div class="container-fluid">-->
+<!--            <div class="row no-gutter popup-gallery">-->
+<!--                <div class="col-lg-4 col-sm-6">-->
+<!--                    <a href="img/portfolio/fullsize/BFClogoblack.png" class="portfolio-box">-->
+<!--                      <div class="center-cropped">-->
+<!--                        <img src="img/portfolio/thumbnails/BFClogoblack.png" class="img-portfolio" alt="">-->
+<!--                      </div>-->
+<!--                        <div class="portfolio-box-caption">-->
+<!--                            <div class="portfolio-box-caption-content">-->
+<!--                                <div class="project-category text-faded">-->
+<!--                                    BFC Sensors-->
+<!--                                </div>-->
+<!--                                <div class="project-name">-->
+<!--                                    Cloud telemetry start-up-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-sm-6">-->
+<!--                    <a href="img/portfolio/fullsize/EvoSim.png" class="portfolio-box">-->
+<!--                      <div class="center-cropped">-->
+<!--                        <img src="img/portfolio/thumbnails/EvoSim.png" class="img-portfolio" alt="">-->
+<!--                      </div>-->
+<!--                        <div class="portfolio-box-caption">-->
+<!--                            <div class="portfolio-box-caption-content">-->
+<!--                                <div class="project-category text-faded">-->
+<!--                                    Evolution simulator-->
+<!--                                </div>-->
+<!--                                <div class="project-name">-->
+<!--                                    Virtual agents compete for resources and evolve ways to survive-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-sm-6">-->
+<!--                    <a href="img/portfolio/fullsize/ampli200w.jpg" class="portfolio-box">-->
+<!--                      <div class="center-cropped">-->
+<!--                        <img src="img/portfolio/thumbnails/ampli200w.jpg" class="img-portfolio" alt="">-->
+<!--                      </div>-->
+<!--                        <div class="portfolio-box-caption">-->
+<!--                            <div class="portfolio-box-caption-content">-->
+<!--                                <div class="project-category text-faded">-->
+<!--                                    200W class-G Amplifier-->
+<!--                                </div>-->
+<!--                                <div class="project-name">-->
+<!--                                    Built from scratch over one semester. Full funcionality with tone and volume control.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-sm-6">-->
+<!--                    <a href="img/portfolio/fullsize/MouseGlove.jpg" class="portfolio-box">-->
+<!--                      <div class="center-cropped">-->
+<!--                        <img src="img/portfolio/thumbnails/MouseGlove.jpg" class="img-portfolio" alt="">-->
+<!--                      </div>-->
+<!--                        <div class="portfolio-box-caption">-->
+<!--                            <div class="portfolio-box-caption-content">-->
+<!--                                <div class="project-category text-faded">-->
+<!--                                    MouseGlove-->
+<!--                                </div>-->
+<!--                                <div class="project-name">-->
+<!--                                    Glove-like interface for PC pointer control with hand and wrist movements.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-sm-6">-->
+<!--                    <a href="img/portfolio/fullsize/EcoQuis.png" class="portfolio-box">-->
+<!--                      <div class="center-cropped">-->
+<!--                        <img src="img/portfolio/thumbnails/EcoQuis.png" class="img-portfolio" alt="">-->
+<!--                      </div>-->
+<!--                        <div class="portfolio-box-caption">-->
+<!--                            <div class="portfolio-box-caption-content">-->
+<!--                                <div class="project-category text-faded">-->
+<!--                                    Ecobochos-->
+<!--                                </div>-->
+<!--                                <div class="project-name">-->
+<!--                                    Educational trivia app for environmental awareness.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-4 col-sm-6">-->
+<!--                    <a href="img/portfolio/fullsize/ImgDeteccionPoros.png" class="portfolio-box">-->
+<!--                      <div class="center-cropped">-->
+<!--                        <img src="img/portfolio/thumbnails/ImgDeteccionPoros.png" class="img-portfolio" alt="">-->
+<!--                      </div>-->
+<!--                        <div class="portfolio-box-caption">-->
+<!--                            <div class="portfolio-box-caption-content">-->
+<!--                                <div class="project-category text-faded">-->
+<!--                                    Automatic pore detection system-->
+<!--                                </div>-->
+<!--                                <div class="project-name">-->
+<!--                                    Thesis project. Research and development of a computer vision based system for pore detection in sucker rod couplings.-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
 
 
 
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Let's Get In Touch!</h2>
+                    <hr class="primary">
+                    <p>I'm always open to new projects and collaborations!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>+44 739 11 23 814</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:alamimejjatiyoussef@gmail.com">alamimejjatiyoussef@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+    <!-- p5 JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="js/thirdsketch.js"></script>
+
+
+
+
+    <!-- JAVASCRIPT FOR PORTFOLIO2 -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <!-- the jScrollPane script -->
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+    <script type="text/javascript" src="js/jquery.gpCarousel.js"></script>
+    <script type="text/javascript" src="js/grid_portfolio.js"></script>
+
+
+
+    <!--Timeline JS -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
 
 
 <!--
-**AlamiMejjati/AlamiMejjati** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+    <?php
 
-Here are some ideas to get you started:
+    if (!empty($_SERVER['HTTP_CLIENT_IP']))   //check ip from share internet
+        {
+          $ipaddress = $_SERVER['HTTP_CLIENT_IP']."\r\n";
+        }
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))   //to check if ip is pass from proxy
+        {
+          $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR']."\r\n";
+        }
+    else
+        {
+          $ipaddress = $_SERVER['REMOTE_ADDR']."\r\n";
+        }
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    $file = 'ips.txt';  //this is the file to which the IP address will be written; name it your way.
+
+    $fp = fopen($file, 'a+');
+
+    fwrite($fp, $ipaddress);
+
+    fclose($fp);
+
+    ?>
+
+
+
+    <?php $file = fopen("ips.php", "a+"); fputs($file, "<php //$_SERVER["REMOTE_ADDR"] connected $numday $month $year at $hour h $minutes ?>\n"); fclose($file); ?> -->
+
+
+
+</body>
+
+
+
+
+</html>
