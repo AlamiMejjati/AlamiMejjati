@@ -23,6 +23,7 @@ a.more_link{
 a.more_link:hover{
 	border-bottom:1px dotted #ddd;
 }
+a:hover {color: #69EEAD;}
 .clr{
 	clear:both;
 }
