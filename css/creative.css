@@ -45,6 +45,10 @@ p {
 .bg-primary {
   background-color: #4E5F57;
 }
+
+.bg-secondary {
+  background-color: #CFCFCF;
+}
 .bg-dark {
   background-color: #222222;
   color: white;
@@ -60,6 +64,10 @@ aside {
 }
 .no-padding {
   padding: 0;
+}
+.boldpublication {
+color: #eb3812;
+font-size: 20px;
 }
 .navbar-default {
   background-color: white;
