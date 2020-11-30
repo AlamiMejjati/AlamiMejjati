@@ -47,7 +47,7 @@ let particles = [];
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent("sketch-holder");
-  for(let i = 0;i<width/5;i++){
+  for(let i = 0;i<width/10;i++){
     particles.push(new Particle());
   }
 }
