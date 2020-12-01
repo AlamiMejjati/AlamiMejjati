@@ -60,3 +60,6 @@ function draw() {
     particles[i].joinParticles(particles.slice(i));
   }
 }
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
