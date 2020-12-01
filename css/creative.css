@@ -218,7 +218,6 @@ header .header-content .header-content-inner p {
 }
 
 .portrait-pic {
-
   background-image: url('../images/me.jpg');
   background-position: center;
   background-size: cover;
@@ -230,8 +229,6 @@ header .header-content .header-content-inner p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-
 }
 
 .portfolio-title {
