@@ -217,6 +217,18 @@ header .header-content .header-content-inner p {
   }
 }
 
+.publims
+{
+    border: solid 1px #CCC;
+    -moz-box-shadow: 5px 5px 0px #999;
+    -webkit-box-shadow: 5px 5px 0px #999;
+    box-shadow: 5px 5px 0px #999;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .portrait-pic {
   background-image: url('../images/me.jpg');
   background-position: center;
