@@ -106,7 +106,7 @@ font-size: 20px;
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #4E5F57 !important;
+  color: #BAB938 !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -143,7 +143,7 @@ font-size: 20px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
   .navbar-default.affix .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: #BAB938;
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -388,6 +388,9 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-xl {
   padding: 15px 30px;
+}
+.btn-secondary {
+  background-color: #B9B9B9 ;
 }
 ::-moz-selection {
   color: white;

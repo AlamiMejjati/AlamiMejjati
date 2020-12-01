@@ -24,7 +24,7 @@
 	top: 0;
 	height: 100%;
 	width: 1px;
-	background: #42bc7f;
+	background: #BFBE2F;
 }
 .story .single-story span {
 	display: block;
@@ -48,7 +48,7 @@
 	top: 9px;
 	height: 18px;
 	width: 18px;
-	background: #42bc7f;
+	background: #BFBE2F;
 	border-radius: 100%;
 }
 .story .single-story span::after {
